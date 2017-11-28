@@ -1,0 +1,27 @@
+{
+	"name": "ckeditor-medialink",
+	"version": "1.0.0",
+	"description": "The Media Link plugin for CKEditor - JavaScript WYSIWYG web text editor.",
+	"author": {
+		"name": "Regents of the University of California",
+		"email": "copyright@ucdavis.edu",
+		"url": "https://www.ucdavis.edu"
+	},
+	"contributors": [
+		{
+			"name": "Mark Miller",
+			"email": "mrkmiller@ucdavis.edu"
+		}
+	],
+	"license": "GPL-2.0",
+	"bugs": "https://github.com/ucdavis/ckeditor-medialink/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ucdavis/ckeditor-medialink"
+	},
+	"keywords": [
+		"CKEditor",
+		"Widget",
+    "Media Object"
+	]
+}
