@@ -1,0 +1,25 @@
+media-link {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: auto min-content;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #f2f2f2;
+}
+
+media-link div[slot] {
+  grid-column: 2 / 3;
+  padding: .5rem;
+  min-height: 1rem;
+  background: #ffffff;
+}
+
+media-link div[slot="image"] {
+  grid-column: 1 / 2;
+  grid-row: 1 / span 2;
+}
+
+media-link div[slot="title"] {
+  font-weight: bold;
+}

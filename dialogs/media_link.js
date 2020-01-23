@@ -12,16 +12,16 @@ CKEDITOR.dialog.add('media_link', function (editor) {
         id: 'info',
         elements: [
           {
-            id: 'linkURL',
+            id: 'linkUrl',
             type: 'text',
             label: 'Link URL',
 
             setup: function (widget) {
-              this.setValue(widget.data.linkURL);
+              this.setValue(widget.data.linkUrl);
             },
 
             commit: function (widget) {
-              widget.setData('linkURL', this.getValue());
+              widget.setData('linkUrl', this.getValue());
             }
           }
         ]
