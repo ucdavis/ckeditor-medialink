@@ -42,15 +42,14 @@
         // Create the HTML template
         template:
           '<media-link url="#">' +
-          '<div slot="image"></div>' +
-          '<div slot="title">Title</div>' +
-          '<div slot="content"><p>Content</p></div>' +
+            '<div slot="image">Add an Image</div>' +
+            '<div slot="title">Title</div>' +
+            '<div slot="content"><p>Content</p></div>' +
           '</media-link>',
 
         editables: {
           image: {
-            selector: '[slot="image"]',
-            allowedContent: 'img[!src, alt, height, width, data-entity-type, data-entity-uuid]; drupal-media[data-entity-type, data-entity-uuid, data-view-mode]'
+            selector: '[slot="image"]'
           },
           title: {
             selector: '[slot="title"]',
@@ -80,7 +79,7 @@
         // This dialog window will be opened when creating a new widget or editing an existing one.
         dialog: 'media_link',
 
-        // When a widget is being initialized, we need to read the data ("align")
+        // When a widget is being initialized, we need to read the data ("url")
         // from DOM and set it by using the widget.setData() method.
         // More code which needs to be executed when DOM is available may go here.
         init: function () {
