@@ -1,6 +1,6 @@
 {
 	"name": "ckeditor-medialink",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "The Media Link plugin for CKEditor - JavaScript WYSIWYG web text editor.",
 	"author": {
 		"name": "Regents of the University of California",
@@ -22,6 +22,6 @@
 	"keywords": [
 		"CKEditor",
 		"Widget",
-    "Media Object"
+		"Media Object"
 	]
 }
