@@ -124,9 +124,10 @@
       });
 
       // Insert the old data into the new template markup.
-      var newMarkup = '<div slot="image">' + image.getHtml() + '</div>' +
-        '<div slot="title">' + title.getHtml() + '</div>' +
-        '<div slot="content">' + content.getHtml() + '</div>';
+      var newMarkup = '';
+      if (image) { newMarkup += '<div slot="image">' + image.getHtml() + '</div>'; }
+      if (title) { newMarkup += '<div slot="title">' + title.getHtml() + '</div>'; }
+      if (content) { newMarkup += '<div slot="content">' + content.getHtml() + '</div>'; }
 
       element.removeClass('media-link__wrapper');
       element.name = 'media-link';
