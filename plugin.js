@@ -49,7 +49,8 @@
 
         editables: {
           image: {
-            selector: '[slot="image"]'
+            selector: '[slot="image"]',
+            disallowedContent: 'a'
           },
           title: {
             selector: '[slot="title"]',
